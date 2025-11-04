@@ -3,7 +3,6 @@
 ## 🔍 Deskripsi Singkat  
 Modul ini bertujuan untuk membangun dan mengonfigurasi jaringan dasar yang terdiri dari satu **router (R1)**, satu **switch (S1)**, dan dua **PC (PC-A dan PC-B)**. Tujuannya adalah agar semua perangkat dapat saling berkomunikasi menggunakan **IPv4 dan IPv6**.  
 
----
 
 ## ⚙️ Langkah-Langkah Utama  
 
@@ -11,7 +10,6 @@ Modul ini bertujuan untuk membangun dan mengonfigurasi jaringan dasar yang terdi
 - Rakit topologi jaringan sesuai diagram (hubungkan **R1 – S1 – PC-A – PC-B**).  
 - Pastikan semua perangkat menyala dan lakukan reset konfigurasi (jika ada konfigurasi lama).  
 
----
 
 ### **2. Configure PC Hosts**
 - Atur alamat IP statis pada PC-A dan PC-B sesuai tabel:  
@@ -19,7 +17,6 @@ Modul ini bertujuan untuk membangun dan mengonfigurasi jaringan dasar yang terdi
   - **PC-B** → `192.168.0.3 /24`, Gateway: `192.168.0.1`  
 - Uji koneksi awal dengan `ping`, yang gagal karena router belum dikonfigurasi.  
 
----
 
 ### **3. Configure the Router (R1)**
 Masuk ke router menggunakan koneksi console dan lakukan konfigurasi berikut:
@@ -61,9 +58,7 @@ Aktifkan routing IPv6 dan simpan konfigurasi:
 ```bash
 R1(config)# ipv6 unicast-routing
 R1# copy running-config startup-config
-```
 
----
 
 ### **4. Configure the Switch (S1)**
 
@@ -81,7 +76,6 @@ S1(config)# ip default-gateway 192.168.1.1
 S1# copy running-config startup-config
 ```
 
----
 
 ### **5. Verify Connectivity**
 Uji konektivitas antar perangkat:
@@ -89,7 +83,6 @@ Uji konektivitas antar perangkat:
 - Dari **S1** → `ping 192.168.0.3`  
 Semua **ping** harus berhasil menandakan router berhasil merutekan lalu lintas antar subnet.
 
----
 
 ### **6. Display Device Information**
 Gunakan perintah berikut untuk memverifikasi konfigurasi dan status jaringan:
@@ -104,14 +97,12 @@ S1# show ip interface brief
 
 Perintah ini menampilkan tabel routing, status antarmuka, serta konfigurasi IPv4 dan IPv6.
 
----
 
 ## 🧠 Hasil & Pembelajaran  
 - Memahami cara konfigurasi dasar **router** dan **switch** agar dua subnet dapat berkomunikasi.  
 - Menguasai perintah penting **Cisco IOS** seperti `interface`, `no shutdown`, `enable secret`, dan `show ip route`.  
 - Menerapkan konsep **IPv4, IPv6, default gateway**, dan **routing dasar** dalam jaringan kecil.  
 
----
 
 ## 💡 Catatan  
 Jika antarmuka menunjukkan status *administratively down*, gunakan perintah berikut:
@@ -119,9 +110,4 @@ Jika antarmuka menunjukkan status *administratively down*, gunakan perintah beri
 R1(config-if)# no shutdown
 ```
 
-Jika alamat IP salah dikonfigurasi, komunikasi antar subnet tidak akan berhasil.  
 
----
-
-✍️ **Created by:** *[Your Name]*  
-📘 **Cisco Networking Academy - CCNA Lab 10.4.4*
