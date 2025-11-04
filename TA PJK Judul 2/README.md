@@ -14,10 +14,10 @@ Percobaan ini bertujuan untuk membangun dan mengonfigurasi jaringan dasar yang t
 
 ### **2. Configure PC Hosts**
 - Atur alamat IP statis pada PC-A dan PC-B sesuai tabel:  
-  - **PC-A** → `192.168.1.3 /24`, Gateway: `192.168.1.1`  
-  - **PC-B** → `192.168.0.3 /24`, Gateway: `192.168.0.1`  
+  - **PC-A** → `192.168.1.3 /24`, Gateway: `192.168.1.1` 
+  - **PC-B** → `192.168.0.3 /24`, Gateway: `192.168.0.1`
 - Uji koneksi awal dengan `ping`, yang gagal karena router belum dikonfigurasi.  
-
+<img width="895" height="453" alt="Screenshot 2025-11-04 233948" src="https://github.com/user-attachments/assets/304847ed-e15c-403d-8ea8-ff385b960bfb" />
 
 ### **3. Configure the Router (R1)**
 Masuk ke router menggunakan koneksi console dan lakukan konfigurasi berikut:
@@ -60,7 +60,6 @@ Aktifkan routing IPv6 dan simpan konfigurasi:
 R1(config)# ipv6 unicast-routing
 R1# copy running-config startup-config
 
-
 ### **4. Configure the Switch (S1)**
 
 Masuk ke switch dan lakukan konfigurasi dasar:
@@ -83,7 +82,7 @@ Uji konektivitas antar perangkat:
 - Dari **PC-A** → `ping 192.168.0.3`
 - Dari **S1** → `ping 192.168.0.3`  
 Semua **ping** harus berhasil menandakan router berhasil merutekan lalu lintas antar subnet.
-
+<img width="673" height="429" alt="Screenshot 2025-11-04 234058" src="https://github.com/user-attachments/assets/2e545ff7-3b0a-4258-9473-d2b2612eeabf" />
 
 ### **6. Display Device Information**
 Gunakan perintah berikut untuk memverifikasi konfigurasi dan status jaringan:
