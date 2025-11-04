@@ -1,4 +1,4 @@
-# TA PJK Judul 2
+# TA PJK Judul 
 [Link YouTube](https://youtu.be/IQEsizySd_4)
 
 ### **10.4.4 Lab - Build a Switch and Router Network**  
