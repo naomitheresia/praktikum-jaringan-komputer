@@ -1,10 +1,12 @@
 # TA PJK Judul 2
-# 10.4.4 Lab - Build a Switch and Router Network  
+[Link YouTube](https://youtu.be/IQEsizySd_4)
 
-## Deskripsi Singkat  
+### **10.4.4 Lab - Build a Switch and Router Network**  
+
+### **Deskripsi Singkat**  
 Percobaan ini bertujuan untuk membangun dan mengonfigurasi jaringan dasar yang terdiri dari satu **router (R1)**, satu **switch (S1)**, dan dua **PC (PC-A dan PC-B)**. Tujuannya adalah agar semua perangkat dapat saling berkomunikasi menggunakan **IPv4 dan IPv6**.  
 
-## Langkah-Langkah:
+### **Langkah-Langkah:**
 ### **1. Set Up Topology and Initialize Devices**
 - Rakit topologi jaringan sesuai diagram (hubungkan **R1 – S1 – PC-A – PC-B**).  
 - Pastikan semua perangkat menyala dan lakukan reset konfigurasi (jika ada konfigurasi lama).  
