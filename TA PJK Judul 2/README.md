@@ -1,10 +1,10 @@
-# 🧩 10.4.4 Lab - Build a Switch and Router Network  
+# TA PJK Judul 2
+# 10.4.4 Lab - Build a Switch and Router Network  
 
-## 🔍 Deskripsi Singkat  
+## Deskripsi Singkat  
 Modul ini bertujuan untuk membangun dan mengonfigurasi jaringan dasar yang terdiri dari satu **router (R1)**, satu **switch (S1)**, dan dua **PC (PC-A dan PC-B)**. Tujuannya adalah agar semua perangkat dapat saling berkomunikasi menggunakan **IPv4 dan IPv6**.  
 
-
-## ⚙️ Langkah-Langkah Utama  
+## Langkah-Langkah Utama  
 
 ### **1. Set Up Topology and Initialize Devices**
 - Rakit topologi jaringan sesuai diagram (hubungkan **R1 – S1 – PC-A – PC-B**).  
@@ -94,20 +94,10 @@ R1# show ip interface brief
 R1# show ipv6 interface brief
 S1# show ip interface brief
 ```
-
 Perintah ini menampilkan tabel routing, status antarmuka, serta konfigurasi IPv4 dan IPv6.
 
 
-## 🧠 Hasil & Pembelajaran  
-- Memahami cara konfigurasi dasar **router** dan **switch** agar dua subnet dapat berkomunikasi.  
-- Menguasai perintah penting **Cisco IOS** seperti `interface`, `no shutdown`, `enable secret`, dan `show ip route`.  
-- Menerapkan konsep **IPv4, IPv6, default gateway**, dan **routing dasar** dalam jaringan kecil.  
 
 
-## 💡 Catatan  
-Jika antarmuka menunjukkan status *administratively down*, gunakan perintah berikut:
-```bash
-R1(config-if)# no shutdown
-```
 
 
